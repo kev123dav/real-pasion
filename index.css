@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    font-family: "Bebas Neue", sans-serif;
+    width: 100%;
+    height: 100%;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background-image: -webkit-linear-gradient(
+        0deg,
+        #fb4806 0%,
+        #fbcd00  46%,
+        #243cfe 86%
+    );
+    padding: 15px 20px;
+}
+header .logo{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/1ra.png);
+    background-size: cover;
+    background-position: center center; 
+}
+
+header.abajo .logo,
+header.abajo ul li a{
+    color: #000;
+}
+.iniciotxt{
+    position: absolute;
+    top: 10%; 
+    z-index: 20; 
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.iniciotxt h1{
+    font-size: 140px;
+    color: #fff;
+    margin-right: 10%;
+    position: static ,     ;
+}
+
+p{
+    font-size: 40px;
+    color: white;
+}
+.sobre{
+    padding: 100px;
+    background-color: #243cfe;
+}
+.sobretodo{
+    display: flex;
+    position: relative;
+}
+.prim{
+    width: 30%;
+    margin-right: 10%;
+}
+.sobretxt{
+    width: 50%;
+
+}
+h2{
+    font-size: 80px;
+    line-height: 90px;
+    margin-bottom: 15px;
+}
+.edades{
+    padding: 100px;
+    background-color: #fbcd00;
+}
+.edadestodo{
+    display: flex;
+    position: relative;
+}
+.segun{
+    width: 30%;
+    margin-right: 10%;
+    justify-content: flex-end;
+}
+.edadestxt{
+    width: 50%;
+}
+.profes{
+    padding: 100px;
+    background-color: #fb4806;
+}
+.profestodo{
+    display: flex;
+    position: relative;
+}
+.terce{
+    width: 30%;
+    margin-right: 10%;
+    justify-content: flex-end;
+}
+.profetxt{
+    width: 50%;
+}
+.wrapper{
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #FFF;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.card :hover{
+    transform: translateY(20px);
+}
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fb4806 ,  #F7DC6F );
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card:hover:before{
+    opacity: 1;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #FFF;
+    opacity: 1;
+    transform: translateY(30px);
+    transition: 0.5s all;   
+}
+.card:hover.info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card.info h1{
+    margin: 1;
+    font-size:50px ;
+}
+
+.txt{
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: black;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.card.info.btn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card.info.btn :hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+header ul li a :hover{
+    background-color: #F7DC6F;
+}
+.pie-pagina{
+	width: 100%;
+	background-color: #fd460a;
+  margin-top: 40px;
+  }
+  .pie-pagina .grupo-1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap:50px;
+	padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box h2{
+	background: linear-gradient(to right, #243ffe, #efe628, #fb470a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	margin-bottom: 25px;
+	font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p{
+	color: white;
+	margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a{
+	display: inline-block;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	color: var(--cafe);
+	margin-right: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	text-align: center;
+	transition: all 300ms ease;
+	border-radius: 50px;
+  }
+
+  .pie-pagina .box .acerca{
+	display: flex;
+  text-decoration: none;
+	flex-direction: column;
+	padding-bottom: 16px;
+	color: white;
+	transition: all 0.6s ease;
+  }
+  .pie-pagina .box .acerca:hover{
+	border-left: 1px solid white;
+	padding-left: 10px;
+	color: white;
+  }
+  
+  .pie-pagina .grupo-1 .red-social .fa-instagram:hover{
+	background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0d280);
+	transform: scale(1.1);
+	transition: 0.2s;
+	color: white;
+	transition: all 0.5s;
+  }
+  
+  .pie-pagina .grupo-1 .red-social .fa-tiktok:hover{
+	background-color: rgb(34, 34, 34);
+	transform: scale(1.1);
+	transition: 0.2s;
+	color: white;
+	transition: all 0.5s;
+  }
+  
+  .pie-pagina .grupo-1 .red-social .fa-twitter:hover{
+	background-color: #229df0;
+	transform: scale(1.1);
+	transition: 0.2s;
+	color: white;
+	transition: all 0.5s;
+  }
+  
+  .pie-pagina .grupo-1 .red-social .fa-facebook:hover{
+	background-color: #2b60b1;
+	transform: scale(1.1);
+	transition: 0.2s;
+	color: white;
+	transition: all 0.5s;
+  }
+  
+  .input-group{
+	display: flex;
+	flex-direction: column;  
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  }
+  
+  .input-cont, textarea{
+	padding: 10px 20px 10px;
+	border-radius: 25px;
+	margin-bottom: 20px;
+	width: 200px;
+	background-color: #EDFFF0;
+	border:  solid #F0FAF1;
+	outline: none;
+
+  }
+  
+  input::placeholder, textarea::placeholder{
+	color: #133b19;
+  }
+  
+  .btn{
+	color: #000000;
+	border-radius: 25px;
+	background-color: #fff;
+	cursor: pointer;
+	padding: 10px 18px;
+	transition: all 0.6s ease;
+	font-size: 14px;
+	margin-left: 6px;
+  font-weight: 600;
+  }
+  
+  .btn:hover{
+  background-color: #fff;
+  color: #090909;
+  font-weight: 100;
+  }
+  
+@media (max-width: 720px) {
+
+  .pie-pagina {
+    width: 100%;
+  }
+
+  .pie-pagina .grupo-1 {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .pie-pagina .grupo-1 .box h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .pie-pagina .grupo-1 .red-social a {
+    margin-right: 10px;
+  }
+
+  .input-group{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn {
+    margin-left: 0px;
+  }
+}
+
+p-pie{
+    font-size: 10px;
+}
